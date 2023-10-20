@@ -1,0 +1,40 @@
+/* Algemene stijl voor alle hoofdingen */
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Stijl voor H1 */
+h1 {
+    font-size: 1.8em;
+}
+
+/* Stijl voor H2 */
+h2 {
+    font-size: 1.5em;
+}
+
+/* Stijl voor H3 */
+h3 {
+    font-size: 1.4em;
+}
+
+/* Algemene stijl voor alle paragrafen */
+p {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.2em;
+}
+
+/* Stijl voor de eerste paragraaf (rode tekst) */
+.red {
+    color: red;
+}
+
+/* Stijl voor de tweede paragraaf (groene tekst) */
+.green {
+    color: green;
+}
+
+/* Stijl voor de derde paragraaf (blauwe tekst) */
+.blue {
+    color: blue;
+}
