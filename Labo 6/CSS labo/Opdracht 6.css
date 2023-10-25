@@ -1,0 +1,19 @@
+.checked{
+    list-style-image: url("/Afbeeldingen/Checkbox aangevinkt.png") width="19px" height="15px";
+    padding: 0;
+}
+
+.checked.before   {
+    list-style-image: url("/Afbeeldingen/Checkbox aangevinkt.png");
+    width: 20px;
+    height: 14px;
+}
+.before   {
+    list-style: none;
+}
+
+ul.checklist li {
+    padding-left: 19px;
+    margin-bottom: 15px;
+    position: relative;
+}
