@@ -1,0 +1,23 @@
+/* Stijl voor de checklist-items */
+.checklist li {
+    list-style: none; /* Verwijder de standaard lijstpuntjes */
+    margin-bottom: 10px; /* Voeg wat ruimte toe tussen de items */
+    display: flex; /* Gebruik flexbox om de afbeelding en de tekst naast elkaar te plaatsen */
+    align-items: center; /* Centreer de inhoud verticaal */
+}
+
+/* Stijl voor aangevinkte items */
+.checklist li.checked img {
+    width: 20px; /* Pas de breedte van de afbeeldingen aan zoals gewenst */
+    height: 20px; /* Pas de hoogte van de afbeeldingen aan zoals gewenst */
+    margin-right: 10px; /* Voeg wat ruimte toe tussen het symbool en de tekst */
+}
+
+/* Stijl voor niet-aangevinkte items */
+.checklist li:not(.checked) img {
+    width: 20px; /* Pas de breedte van de afbeeldingen aan zoals gewenst */
+    height: 20px; /* Pas de hoogte van de afbeeldingen aan zoals gewenst */
+    margin-right: 10px; /* Voeg wat ruimte toe tussen het symbool en de tekst */
+}
+
+
