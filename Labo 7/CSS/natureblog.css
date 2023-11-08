@@ -1,0 +1,78 @@
+article {
+    background: lightgrey;
+}
+
+  body   {
+      width: 95%;
+      margin: 0 auto;
+}
+
+  header   {
+      position: relative;
+  }
+header.class {
+   background-color: white;
+    text-align: left;
+}
+
+section > h1   {
+
+    border-image-width: 95%;
+    height: auto;
+}
+
+   header img {
+        max-width: 100%;
+       width: 100%;
+        display: block;
+       margin: 0 auto;
+    border-top-width: 95px;
+    border-right-width: 95px;
+    border-left-width: 95px;
+    border-bottom-width: 95px;
+       color: white; /* Tekstkleur instellen. */
+       position: relative;
+       background-image: url("Afbeeldingen/Header afbeelding.png");
+  }
+
+   header h1   {
+       position: relative; /* Stel de positie van het <h1> element in als absoluut. */
+       top: 50%; /* Plaats de tekst verticaal in het midden van het header-element. */
+       color: black; /* Tekstkleur instellen. */
+
+
+   }
+.img.text    {
+
+}
+body > header > img   {
+border-image-width: auto;
+}
+
+  nav {
+      background-color: dimgrey;
+  }
+
+nav  > a  {
+color:lawngreen;
+}
+
+Article > header > h1   {
+    font-size: 20px;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+h1  > img.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
