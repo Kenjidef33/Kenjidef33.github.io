@@ -1,12 +1,33 @@
-table {
-    border-spacing: 10px;
-    border-collapse: collapse;
-    width: 100%;
-    margin: 0 auto;
+/* Stijlen voor de tabelsectie */
+.vrienden {
+    margin: 20px;
 }
 
-th, td {
+/* Stijlen voor de tabel */
+.mooie-tabel {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Stijlen voor de tabelkoppen */
+.mooie-tabel th {
+    background-color: #f2f2f2;
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
+}
+
+/* Stijlen voor de tabelcellen */
+.mooie-tabel td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+/* Alternatieve achtergrondkleur voor oneven rijen */
+.mooie-tabel tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+td   {
+    font-family: Verdana, serif;
 }
