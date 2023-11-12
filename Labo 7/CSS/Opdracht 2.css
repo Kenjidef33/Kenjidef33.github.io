@@ -87,3 +87,49 @@ body   {
     background-color: whitesmoke;
     padding: 5px
 }
+
+
+
+h1   {
+    color: red;
+}
+
+p   {
+    font-family: Skranji, Arial, sans-serif;
+    font-size: 13px;
+}
+
+h3   {
+    font-style: italic;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+.doorkruisen {
+    position: relative;
+}
+.doorkruisen::before,
+.doorkruisen::after   {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ff0e11;
+}
+.doorkruisen::before {
+    transform: rotate(-45deg);
+}
+
+.doorkruisen::after {
+    transform: rotate(45deg);
+}
+
+th  {
+    color: limegreen;
+}
