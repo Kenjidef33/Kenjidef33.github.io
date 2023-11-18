@@ -1,0 +1,82 @@
+body {
+    font-size: 1.2em;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    width: 95%;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+article  {
+    display: inline-block;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    float: left;
+}
+
+#column {
+    box-sizing: border-box;
+    width: 25%;
+    border: 6px solid #a7cece;
+    padding: 100px;
+    margin: auto;
+    float: right;
+}
+
+#afbeelding img   {
+    display: inline-block;
+    width: 15%; /* Hierdoor worden de afbeeldingen in vier kolommen verdeeld */
+    height: 40px;
+    margin: -5px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container   {
+    width: 100%;
+    overflow: hidden;
+}
+
+  #guarantee {
+      margin: 30px;
+      padding: 20px;
+      color: #444444;
+     background-color: #a7cece;
+     border: 1px white dashed;
+ }
+
+#weekly-specials h1 {
+    color: black;
+}
+
+#weekly-specials h2 {
+    color: red;
+}
+h1 {
+    color: #007e7e;
+    font-size: 150%;
+}
+
+h2 {
+    color: #007e7e;
+    font-size: 130%;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#weekly-specials a:hover {
+    background-color: brown;
+}
+
+#weekly-specials   {
+    text-align: center;
+    margin: 0;
+}
+
+footer  {
+    font-size: 0.6em;
+    clear: both;
+}
