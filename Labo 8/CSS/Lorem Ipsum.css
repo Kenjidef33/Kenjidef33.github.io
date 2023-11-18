@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+}
+
+.column {
+    box-sizing: border-box;
+    width: 50%;
+    border: 1px solid #ff0e11;
+    padding: 10px;
+    margin: 10px;
+}
+
+.column-container   {
+    display: flex;
+    margin: -10px;
+}
+
