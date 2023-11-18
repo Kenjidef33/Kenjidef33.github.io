@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Antwoorden van labo 8</h1>
+<p>display:block ==> Bij display:block veranderen alle blokken waardoor ze onder elkaar komen te staan. </p>
+<p>Bij display: inline komen de blokken naast elkaar te staan maar in het klein.</p>
+<p>Bij display:inline-block staan hierdoor de blokken naast elkaar maar zijn ze uitgerekt en staan de getallen werspreid over 7 blokken waarbij een beperkte breedte whitespace tussen staat en de getallen onder elkaar staan waarbij er redelijk veel ruimte tussen 2 getallen staan.</p>
+
+<h3>Vraag 2</h3>
+
+<p>Voor welke waarden worden de opgegeven width en height genegeerd?</p>
+<p>Bij display inline zullen de width en height genegeerd worden omdat inline elementen geen afmetingen hebben. </p>
+
+<h3>Vraag 3</h3>
+<p>Bij display:inline worden naast elkaar weergegeven op dezelfde regel, zoals woorden in een zin. Bij display:inline-block ozuden ze ook nog op dezelfde regel staan maar heb ik meer controle over de width en height van de elementen.</p>
+
+
+<h2>Opdracht 2 </h2>
+<h3>Vanwaar komen de lege ruimtes tussen blokken die naast elkaar staan?</h3>
+<p>De whitespace tussen de blokken komen doordat HTML spatie gevoelig is dus als elke div element ene spatie krijgt dan zal er whitespace komen. Dat gebeurt niet als ze allemaal vlak naast elkaar staan dan verdwijnt die whitespace.</p>
+<h3>Resize je browservenster horizontaal en kijk hoe de blokken netjes over de regels verdeeld worden.</h3>
+<p>Dit komt door inline-block. Dit zorgt ervoor dat het document opschuift als de pagina kleiner gemaakt wordt. Het document past zich aan aan de totale ruimte van het document dat vrij is.</p>
+
+
+<h2>Opdracht 3 antwoorden</h2>
+<h3>Waarom staat de tekst in de blokken horizontaal gecentreerd?</h3>
+<p>Dit komt doordat de bij het &ltdiv&gt in CSS een text-align:center staat die ervoor zorgt dat de tekst horizontaal geplaatst is en dan ook nog eens in het midden. </p>
+<h3>Ga na dat een property vertical-align:center geen effect heeft. Waarom eigenlijk niet?</h3>
+<p> In CSS bestaat er gewoon geen waarde center voor de eigenschap vertical-align. Daarom doet die ook niks. De correcte waarden zijn bijvoorbeeld baseline, super, top, middle, bottom, en text-bottom. Het heeft geen specifieke waarde voor het verticaal centreren van tekst binnen een blokelement.</p>
+<h3>Ga na dat vertical-align:middle er niet voor zorgt dat de tekst verticaal gecentreerd wordt. Wat doet vertical-align dan wel?</h3>
+<p>Het vertical-align-eigenschap in CSS regelt vooral de verticale uitlijning van inline of inline-block elementen binnen de hoogte van hun container. Het heeft echter geen directe invloed op het verticaal centreren van blokelementen, zoals divs met meerdere regels tekst.</p>
+<h3>Zoek op google of er een simpele manier is om tekst verticaal te centreren in een element.
+    <li>Wat is de ‘simpele’ manier om een één enkele regel tekst verticaal te centreren?
+    (tip:line-height)</li>
+    <li>Welke truc wordt vaak gebruikt om meerdere regels verticaal te centreren?
+    (tip: table cell)</li></h3>
+<p>Om het eenvoudiger te maken of om toch tekst verticaal te centreren kan er gebruik gemaakt worden van een klasse verticaal gecentreerd in CSS en daarmee kan tekst dus verticaal gezet worden. Door line-height te gebruiken kan de teksy</p>
+
+<h3>In 'styles.css' staan twee verschillende CSS regels die de height instellen van een element met class="area tall". Waarom krijgt de regel voor class 'tall' voorrang?</h3>
+<p>In CSS wordt de prioriteit van stijlregels bepaald door het specificiteitsniveau en de volgorde van declaratie. Als twee regels conflicteren en beide worden toegepast op hetzelfde element, dan zal de regel met de hoogste specificiteit of de laatste declaratie in de stylesheet worden toegepast + ook het aantal klassen/elementen in een regel zitten spelen een rol in de voorrangsregel van tall. </p>
+
+<h2>Opdracht 4 antwoorden</h2>
+<p>Door elke floaty toe te passen bij element 9, 12 en 14 kan je in de CSS bij flaoty gewoon float links aanduiden en dan nog bij area margin op 0 zetten en dan bekom je wat er gevraagd komt.</p>
+<p>Voor element 17 heeft de break geen invloed omdat het geen display:block element is maar inline-block en dus gebeurt er niks. </p>
+
+<h2>Opdracht 5 antwoorden</h2>
+<p> <img src="/Afbeeldingen/double%20blok.png" alt="afbeelding waarin blokken groen zijn"> Hierin staat dat er inderdaad 2 rijen van blokken komen als het venster breed genoeg is gemaakt na de 9de blok. </p>
+<p>Door de klasse naar area break te zetten zorgt het ervoor dat 13 altijd een nieuwe regel begint en de rest van de blokken daar dan achter komen. </p>
+
+<h2>Lorem Ipsum antwoorden</h2>
+<p>Als er eerst gebruikt gemaakt wordt van class column met een width van 50% of 47% dan zal je zien dat de kolommen onder elkaar zullen blijven staan. Ook als er gebruikt gemaakt wordt van breedte te zetten maar de kolommen zijn niet echt gelijk aan elkaar.</p>
+<p>Door gebruik te maken van pexels zal het ook niet werken want de grootte van beide kolommen werken niet.</p>
+<p>De enige manier is om box-sizing: border-box te gebruiken waarbij dan de width op 50% gezet wordt waardoor beide kolommen gelijk zijn aan elkaar aan de tekst even lang blijft. </p>
+
+<h3>Extra Lorem ipsum</h3>
+<p>Door een column-container class aan te maken kan je padding toevoegen tussen de 2 kolommen.</p>
+
+
+</body>
+</html>
