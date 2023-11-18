@@ -1,3 +1,10 @@
+header   {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
 body {
     font-size: 1.2em;
     font-family: Verdana, Helvetica, Arial, sans-serif;
@@ -5,8 +12,9 @@ body {
 }
 
 header img {
-    max-width: 100%;
+    max-width: 40%;
     height: auto;
+    margin: 20px;
 }
 
 article  {
@@ -26,13 +34,16 @@ article  {
     float: right;
 }
 
+div  {
+    width: 200px;
+}
+
 #afbeelding img   {
     display: inline-block;
-    width: 15%; /* Hierdoor worden de afbeeldingen in vier kolommen verdeeld */
+    width: 15%;
     height: 40px;
     margin: -5px;
     padding: 0;
-    box-sizing: border-box;
 }
 
 #container   {
