@@ -1,0 +1,40 @@
+article  {
+    background-color: #c1ffbe;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+article:nth-child(even)  img {
+    float: right;
+    margin-right: 10px;
+}
+
+article:nth-child(odd)  img  {
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+}
+
+article img {
+    display: block;
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+article p   {
+    font-size: 1.25em;
+    margin-bottom: 0;
+}
+
+h2  {
+    margin-left: 10px;
+}
+
+article:nth-child(even)  p  {
+    margin-left: 10px;
+}
