@@ -80,7 +80,7 @@ article img {
     margin-right: 20px;
 }
 
-article p   {
+article > p   {
     text-align: right;
 }
 
