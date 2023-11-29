@@ -88,7 +88,7 @@ article > p   {
     display: flex;
     flex-wrap: wrap;
     margin-right: 20px;
-    background-color: #666666;
+    background-color: #999999;
     margin-left: -10px;
 }
 
@@ -116,7 +116,7 @@ footer > div{
     list-style-position: inside;
     text-align: center;
     margin-top: -200px;
-    padding-right: 75px;
+    padding-right: 250px;
 }
 
 #copyright {
