@@ -49,4 +49,18 @@ img.img-fluid {
 .custom-column {
     background-color: #3227ff;
 }
+.jumbotron {
+    color: #ff020a;
+}
 
+.card {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
