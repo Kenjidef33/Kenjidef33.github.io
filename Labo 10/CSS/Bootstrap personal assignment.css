@@ -1,0 +1,47 @@
+.container {
+    margin-top: 20px;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+.col-md-6 {
+    border: 1px solid #ced4da;
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+img.img-fluid {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table-light {
+    background-color: #f8f9fa;
+
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 3s ease-in-out;
+}
+
+.animated {
+    animation-duration: 6s;
+    animation-fill-mode: both;
+}
+
+.col-left {
+    background-color: #ffc107;
+    padding: 15px;
+}
+
+.col-right {
+    background-color: #28a745;
+    padding: 15px;
+}
