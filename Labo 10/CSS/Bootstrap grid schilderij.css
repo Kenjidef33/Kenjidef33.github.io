@@ -1,0 +1,67 @@
+#a {
+    border-width: 0 7.5px 15px 0;
+    min-height: 165px;
+    background: rgb(255, 255, 255);
+    grid-column: span 3;
+    grid-row: 1;
+}
+
+#b {
+    border-width: 15px 7.5px 7.5px 0;
+    min-height: 190px;
+    background: rgb(255, 255, 255);
+    grid-column: span 3;
+    grid-row: 2;
+}
+
+#c {
+    border-width: 0 0 7.5px 7.5px;
+    min-height: 355px;
+    background: rgb(220, 40, 26);
+    grid-column: span 9;
+    grid-row: 1 / span 2;
+}
+
+#d {
+    border-width: 7.5px 7.5px 0 0;
+    min-height: 150px;
+    background: rgb(0, 93, 159);
+    grid-column: span 3;
+    grid-row: 3 / span 2;
+}
+
+#e {
+    border-width: 7.5px 7.5px 0 7.5px;
+    min-height: 150px;
+    background: rgb(255, 255, 255);
+    grid-column: span 6;
+    grid-row: 3 / span 2;
+}
+
+#f {
+    border-width: 7.5px 0 12.5px 7.5px;
+    min-height: 75px;
+    background: rgb(255, 255, 255);
+    grid-column: span 1;
+    grid-row: 3;
+}
+
+#g {
+    border-width: 12.5px 0 0 7.5px;
+    min-height: 75px;
+    background-color: rgb(242, 224, 122);
+    grid-column: span 1;
+    grid-row: 4;
+}
+
+.col-sm-3, .col-sm-8, .col-sm-1 {
+    margin: 0;
+}
+
+#painting-container .col-sm-4 {
+    height: 150px;
+}
+
+#painting-container .col-sm-2 {
+    height: 75px;
+}
