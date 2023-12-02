@@ -45,3 +45,7 @@ img.img-fluid {
     background-color: #28a745;
     padding: 15px;
 }
+
+.custom-column {
+    background-color: #3227ff;
+}
