@@ -1,0 +1,20 @@
+.container{
+    background-color: cornflowerblue;
+}
+
+.container .block{
+    margin:50px;
+    padding:50px;
+    background-color: white;
+}
+.container  {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(3, auto);
+gap: 10px; /* optioneel: voeg wat ruimte tussen de blokken toe */
+}
+
+.block {
+    border: 1px solid #000; /* optioneel: voeg een rand toe om de blokken te scheiden */
+    padding: 20px;
+}
