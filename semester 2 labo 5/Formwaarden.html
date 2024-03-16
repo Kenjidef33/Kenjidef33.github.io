@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form id="myForm">
+    <div>
+     <label>
+    Is roker: <input type="checkbox" name="isRoker">
+     </label><br><br>
+    </div>
+    <label>Moedertaal:</label>
+    <label for="nederlands"></label><input type="checkbox" id="nederlands" name="nederlands" class="checkbox-label"> <label class="checkbox-label">Nederlands</label>
+    <label for="frans"></label><input type="checkbox" id="frans" name="frans" class="checkbox-label"> <label class="checkbox-label">Frans</label>
+    <label for="engels"></label><input type="checkbox" id="engels" name="engels" class="checkbox-label"> <label class="checkbox-label">Engels</label><br><br>
+<div>
+    <label for="favorieteBuurland">Favoriete buurland:</label>
+    <select id="favorieteBuurland" name="favorieteBuurland">
+        <option value="Nederland">Nederland</option>
+        <option value="Frankrijk">Frankrijk</option>
+        <option value="Duitsland">Duitsland</option>
+    </select><br><br>
+</div>
+
+<div>
+    <label for="bestelling">Bestelling:</label>
+    <select id="bestelling" name="bestelling" multiple>
+
+        <option value="aardappelen">Aardappelen</option>
+        <option value="brood">Brood</option>
+        <option value="melk">Melk</option>
+        <option value="biefstuk">Biefstuk</option>
+        <option value="chips">Chips</option>
+        <option value="krant">Krant</option>
+    </select>
+    </div><br><br>
+    <button type="button" id="toonResultaat">Toon resultaat</button>
+
+    <script src="scripts/formwaarden.js"></script>
+</form>
+</body>
+</html>
