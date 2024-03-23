@@ -10,7 +10,6 @@ while (index !== -1) {
 
 console.log(`Het aantal keren dat "an" voorkomt (met indexOf): ${count}`);
 
-
 count = 0;
 index = tekst.lastIndexOf(zoektekst);
 
