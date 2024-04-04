@@ -1,4 +1,4 @@
-var familieleden = ["Jan", "Piet", "Kevin", "Maria", "Louise", "Tomas"];
+let familieleden = ["Jan", "Piet", "Kevin", "Maria", "Louise", "Tomas"];
 
 function voegNaamToe(array, naam) {
     array.push(naam);
@@ -10,10 +10,10 @@ console.log("Eerste element:", familieleden[0]);
 console.log("Derde element:", familieleden[2]);
 console.log("Vijfde element", familieleden[4]);
 
-var nieuweNaam = prompt("Voer een nieuwe naam in:");
+let nieuweNaam = prompt("Voer een nieuwe naam in:");
 voegNaamToe(familieleden, nieuweNaam);
 console.log("Array na het toevoegen van de nieuwe naam:", familieleden);
 
-var familieledenString = familieleden.join(",");
+let familieledenString = familieleden.join(",");
 console.log("Array is geconverteerd naar een String:", familieledenString);
 
