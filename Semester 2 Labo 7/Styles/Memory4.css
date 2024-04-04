@@ -1,0 +1,23 @@
+#memoryBoard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 600px; /* Aangepaste breedte om alle kaarten zonder scrollen weer te geven */
+    height: auto; /* Automatische hoogte op basis van de inhoud */
+    margin: 0 auto;
+}
+
+.card {
+    width: calc(600px / 4 - 20px); /* Aangepaste breedte voor elke kaart */
+    height: calc(600px / 4 - 20px); /* Aangepaste hoogte voor elke kaart */
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.card.flipped {
+    cursor: default;
+}
