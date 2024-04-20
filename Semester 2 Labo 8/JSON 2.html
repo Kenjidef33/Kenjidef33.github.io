@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h3>Welk formaat wordt er eigenlijk gebruikt om het Date object?</h3>
+
+<p>In de JSON-standaard wordt het formaat van een datumweergave in een JSON-string bepaald door de ISO 8601-standaard. Hierdoor staat de T voor tijd en de Z voor de tijdzone waarin men zich bevindt. </p>
+
+
+
+<h3> Vraag 2: Wat gebeurt er als eenzelfde object meermaals voorkomt bij het opbouwen van de JSON tekst?</h3>
+<p>Wanneer hetzelfde object meerdere keren voorkomt tijdens het opbouwen van de JSON-tekst, zal het object alleen de eerste keer volledig worden opgenomen en daarna niet meer. De volgende keren dat hetzelfde object voorkomt, zal er een referentie worden gemaakt naar het eerder voorkomende object. Dit wordt gedaan om te voorkomen dat er oneindige recursie ontstaat bij het serialiseren van objecten met verwijzingen naar elkaar. Dit is om het efficiënter te maken en overzichtelijker. </p>
+<script src="Scripts/JSON2.js"></script>
+</body>
+</html>
