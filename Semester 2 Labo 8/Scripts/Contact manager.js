@@ -1,17 +1,12 @@
 let personen = [];
 
-// Valideer de ingevoerde gegevens
 const valideer = () => {
-    // Implementeer validatielogica hier
-    // Return true als de validatie slaagt, anders false
-    return true; // Placeholder returnwaarde, vervang dit met de werkelijke validatielogica
+    return true;
 };
 
-// Event listener (btnBewaar click)
 const bewaarBewerktePersoon = () => {
     console.log("Klik op de knop bewaar");
 
-    // Valideer alle input data en controleer of er geen errors meer zijn
     const isValid = valideer();
 
     if (isValid) {
@@ -22,7 +17,6 @@ const bewaarBewerktePersoon = () => {
         const email = document.getElementById("txtEmail").value;
         const aantalKinderen = document.getElementById("txtAantalKinderen").value;
 
-        // Maak een persoon object
         const persoon = {
             voornaam: voornaam,
             familienaam: familienaam,
@@ -31,16 +25,12 @@ const bewaarBewerktePersoon = () => {
             aantalKinderen: aantalKinderen
         };
 
-        // Haal de geselecteerde index op uit de lijst van personen
         const selectedIndex = document.getElementById("lstPersonen").value;
 
         if (selectedIndex !== "") {
-            // Pas de gegevens van de bestaande persoon aan
             personen[selectedIndex] = persoon;
         } else {
-            // Voeg een nieuwe persoon toe aan de lijst
             personen.push(persoon);
-            // Voeg een nieuwe optie toe aan de selectielijst
             const lstPersonen = document.getElementById("lstPersonen");
             const option = document.createElement("option");
             option.text = `${persoon.voornaam} ${persoon.familienaam}`;
@@ -48,7 +38,6 @@ const bewaarBewerktePersoon = () => {
             lstPersonen.add(option);
         }
 
-        // Optioneel: Wis het formulier na het opslaan
         document.getElementById("txtVoornaam").value = "";
         document.getElementById("txtFamilienaam").value = "";
         document.getElementById("txtGeboorteDatum").value = "";
@@ -57,7 +46,6 @@ const bewaarBewerktePersoon = () => {
     }
 };
 
-// Event listener (btnNieuw click)
 const bewerkNieuwePersoon = () => {
     console.log("Klik op de knop nieuw");
 
@@ -69,7 +57,22 @@ const bewerkNieuwePersoon = () => {
     document.getElementById("txtAantalKinderen").value = "";
 };
 
-// Onze setup functie die de event listeners registreert
+const deletePersoon = (selectedIndex) => {
+    // Verwijder de geselecteerde persoon uit de array
+    personen.splice(selectedIndex, 1);
+
+    // Verwijder de optie uit de lijst
+    const lstPersonen = document.getElementById("lstPersonen");
+    lstPersonen.remove(selectedIndex);
+
+    // Leeg het formulier
+    document.getElementById("txtVoornaam").value = "";
+    document.getElementById("txtFamilienaam").value = "";
+    document.getElementById("txtGeboorteDatum").value = "";
+    document.getElementById("txtEmail").value = "";
+    document.getElementById("txtAantalKinderen").value = "";
+};
+
 const setup = () => {
     let btnBewaar = document.getElementById("btnBewaar");
     btnBewaar.addEventListener("click", bewaarBewerktePersoon);
@@ -78,8 +81,6 @@ const setup = () => {
     btnNieuw.addEventListener("click", bewerkNieuwePersoon);
 
     let lstPersonen = document.getElementById("lstPersonen");
-    // Voeg een change listener toe aan lstPersonen. Bij het klikken op een option element in de lijst
-    // moet de data van die persoon getoond worden in het formulier
     lstPersonen.addEventListener("change", (event) => {
         const selectedIndex = event.target.value;
         if (selectedIndex !== "") {
@@ -91,6 +92,14 @@ const setup = () => {
             document.getElementById("txtAantalKinderen").value = selectedPerson.aantalKinderen;
         }
     });
+
+    // Voeg event listeners toe aan elke optie in de lijst
+    const options = lstPersonen.getElementsByTagName("option");
+    for (let i = 0; i < options.length; i++) {
+        options[i].addEventListener("click", () => {
+            deletePersoon(i);
+        });
+    }
 };
 
 window.addEventListener("load", setup);
